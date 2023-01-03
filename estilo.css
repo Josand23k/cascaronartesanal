@@ -84,7 +84,7 @@
 
 /* -- LATERAL DERECHA --*/
 .lateral-derecha {
-    height: 800px;
+    height: 900px;
     background-color: darkgrey;
 }
 /* -- INTRO -- */
@@ -99,10 +99,10 @@
 }
 .img-slide {
     float: left;
-    height: 150px;
-    width: 221px;
+    height: 155px;
+    width: 238px;
     background-color: var(--background-color);
-    margin: 10px;
+    margin: 2px;
     color: white;
 }
 /* -- CARDS -- */
@@ -111,16 +111,40 @@
     clear: both;
     display: table;
 }
+.title h2 {
+    text-align: center;
+}
 .card-nov {
     float: left;
 }
-.card-nov h2 {
+.card-nov h3 {
     text-align: center;
 }
 .card-img {
     width: 100%;
     height: 150px;
     background-color: var(--background-color);
+}
+/* -- FOOTER -- */
+footer {
+    background-color: var(--background-color);
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+    color: white;
+}
+.info {
+    text-align: center;
+}
+.info a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.copy {
+    text-align: center;
+    font-size: 1.2em;
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {}
