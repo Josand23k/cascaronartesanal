@@ -11,31 +11,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <!-- LOGO -->
-        <a href="index.html"><img src="imagenes/Logo.jpg" alt="Logo Editorial Cascaron Artesanal"></a> 
-        <h1 class="logo">Cascaron Artesanal</h1>
-        <!-- NAVIGATION MENU -->
-        <div class="topnav" id="myTopnav">
-          <a href="index.html" class="active">Inicio</a>
-          <a href="index.html">Catalogo</a>
-          <a href="index.html">Actividades</a>
-          <a href="index.html">Novedades</a>
-          <a href="contact.html">Contacto</a>
-      </div>
-      <div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
-        <div class="accebility">
-          <a href="#" class="language" aria-label="Activate the accessibility mode of the web page"><i class="fa fa-language"></i></a>
+    <header class="primary-header  flex">
+        <div>
+            <img src="imagenes/Logo.jpg" alt="logo" class="logo">
         </div>
-    </nav>
+        <div class="name">
+            <h1>Cascaron Artesanal | Editorial</h1>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false" type="button"><span class="burger">&#9776;</span></button>
+        <nav>
+            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
+                <li class="active">
+                    <a class="nav-links" href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Catalogo</a>
+                </li>
+                <li>
+                    <a href="#">Actividades</a>
+                </li>
+                <li>
+                    <a href="#">Novedades</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 <!-- CONTENIDO -->
 <div class="content row">
-    <div class="col-2 lateral-derecha"></div>
+    <div class="col-2 lateral-derecha">
+        <img src="imagenes/lateral.jpg" alt="Collage de portadas de Cascaron Artesanal Editorial">
+    </div>
     <div class="col-7">
         <section class="intro">
-            <h1>Editorial Cascaron Artesanal</h1>
+            <h1>Cascaron Artesanal Editorial</h1>
             <div class="slide">
                 <div class="img-slide">imagen</div>
                 <div class="img-slide">imagen</div>
