@@ -143,6 +143,17 @@ img {
     line-height: 1.3;
     font-size: 1.1em;
 }
+/* -- SECTIONS -- */
+.hr-index {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(229, 3, 218);
+    margin-bottom: 15px;
+}
+.cards-img {
+    width: 100%;
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -180,7 +191,7 @@ img {
     width: 35px;
     border: 0;
     aspect-ratio: 1;
-    top: 1rem;
+    top: .7rem;
     right: 1rem;
     background-color: var(--background-color); 
 }
@@ -195,6 +206,20 @@ img {
     display: none;
 }
 
+/* -- CARDS -- */
+.xtra {
+    display: none;
+}
+/* -- FOOTER -- */
+footer {
+    padding: 10px;
+}
+footer .info {
+    padding-bottom: 10px;
+}
+.copy p {
+    font-size: .6em;
+}
 }
   
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -295,11 +320,7 @@ img {
 .card-nov h3 {
     text-align: center;
 }
-.card-img {
-    width: 100%;
-    height: 150px;
-    background-color: var(--background-color);
-}
+
 /* -- FOOTER -- */
 footer {
     background-color: var(--background-color);
