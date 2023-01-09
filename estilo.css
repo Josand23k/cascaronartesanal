@@ -15,6 +15,7 @@
 .sr-only {
     display: none;
 }
+
 /* -- NAVBAR -- */
 .logo {
     width: 50px;
@@ -35,17 +36,9 @@
 
 .primary-nav {
     list-style: none;
-    background: hsl(0 0% 0% / 0.75);
 }
 .active-nav {
     font-weight: bold;
-}
-
-@supports (backdrop-filter: blur(1rem)) {
-    .primary-nav {
-        background: rgba(100, 2, 95, 0.5);
-        backdrop-filter: blur(1rem);
-    }
 }
 
 .primary-nav a {
@@ -53,7 +46,50 @@
     color: white;
     text-transform: uppercase;
 }
+    /* -- MEDIAS QUERIES -- */
+@media only screen and (max-width:992px) {
 
+@supports (backdrop-filter: blur(1rem)) {
+    .primary-nav {
+        background: rgba(100, 2, 95, 0.5);
+        backdrop-filter: blur(1rem);
+    }
+}
+/* -- NAVBAR -- */
+.primary-nav {
+    gap: 2.5em;
+
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+
+    transform: translateX(100%);
+}
+
+.primary-nav[data-visible="true"] {
+    transform: translateX(0%);
+}
+
+.mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    width: 35px;
+    border: 0;
+    aspect-ratio: 1;
+    top: .7rem;
+    right: 1rem;
+    background-color: var(--background-color); 
+}
+
+.burger {
+    font-size: 26px;
+    color: white;
+}
+}
 /* -- SLIDE -- */
 .mySlides {
     display: none
@@ -67,7 +103,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+width: 100%;
   position: relative;
   margin: auto;
 }
@@ -153,62 +189,8 @@ img {
 }
 .cards-img {
     width: 100%;
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media (max-width:35em) {
-/* -- COLUMNAS -- */
-[class*="col-"] {
-    width: 100%;
-}
-
-/* -- NAVBAR -- */
-.primary-nav {
-    gap: 2.5em;
-
-    position: fixed;
-    z-index: 1000;
-    inset: 0 0 0 30%;
-
-    flex-direction: column;
-    padding: min(30vh, 10rem) 2em;
-
-    transform: translateX(100%);
-}
-
-.primary-nav[data-visible="true"] {
-    transform: translateX(0%);
-}
-
-.mobile-nav-toggle {
-    display: block;
-    position: absolute;
-    z-index: 9999;
-    width: 35px;
-    border: 0;
-    aspect-ratio: 1;
-    top: .7rem;
-    right: 1rem;
-    background-color: var(--background-color); 
-}
-
-.burger {
-    font-size: 26px;
-    color: white;
-}
-
-/* -- LATERAL -- */
-.lateral-derecha {
-    display: none;
-}
-
-/* -- CARDS -- */
-.xtra {
-    display: none;
+}.card-nov p {
+    padding: 5px 10px;
 }
 /* -- FOOTER -- */
 footer {
@@ -220,42 +202,32 @@ footer .info {
 .copy p {
     font-size: .6em;
 }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
-  
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    /* -- COLUMNAS -- */
-.col-s-1 {width: 8.33%;}
-.col-s-2 {width: 16.66%;}
-.col-s-3 {width: 25%;}
-.col-s-4 {width: 33.33%;}
-.col-s-5 {width: 41.66%;}
-.col-s-6 {width: 50%;}
-.col-s-7 {width: 58.33%;}
-.col-s-8 {width: 66.66%;}
-.col-s-9 {width: 75%;}
-.col-s-10 {width: 83.33%;}
-.col-s-11 {width: 91.66%;}
-.col-s-12 {width: 100%;}
 
-/* -- NAVBAR -- */
-    /* -- MENU -- */
-
-/* -- LATERAL -- */
-.lateral-derecha {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width:600px) {
+/* -- COLUMNAS -- */
+[class*="col-"] {
+    width: 100%;
+}
+/* -- CARDS -- */
+.xtra {
     display: none;
 }
 }
   
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    
-  } 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+[class*="col-"] {
+    width: 100%;
+}
+}
   
 /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
-/* -- NAVBAE MENU -- */
-
 /*-- COLUMNAS -- */
 .row {
     content: "";
@@ -280,13 +252,7 @@ footer .info {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 } 
-/* -- LATERAL DERECHA --*/
-.lateral-derecha {
-    background-color: darkgrey;
-}
-.lateral-derecha img {
-    width: 100%;
-}
+
 /* -- INTRO -- */
 .intro h1 {
     width: 100%;
@@ -320,7 +286,9 @@ footer .info {
 .card-nov h3 {
     text-align: center;
 }
-
+.xtra-l {
+    display: none;
+}
 /* -- FOOTER -- */
 footer {
     background-color: var(--background-color);
@@ -341,17 +309,4 @@ footer {
 .copy {
     text-align: center;
     font-size: 1.2em;
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-/* NAVBAR MENU */
-
-/* -- ACCESIBILIDAD --  */
-
-/* -- SLIDE -- */
-.img-slide {
-    float: left;
-    height: 155px;
-    width: 238px;
-}
 }
