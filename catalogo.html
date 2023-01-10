@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascarón Artesanal | Servicio Editoriales</title>
+    <link rel="icon" href="imagenes/favicon.png" type="image/gif">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="primary-header  flex">
+        <div>
+            <img src="imagenes/Logo.jpg" alt="logo" class="logo">
+        </div>
+        <div class="name">
+            <h1>Cascarón Artesanal</h1>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false" type="button"><span class="burger">&#9776;</span></button>
+        <nav>
+            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
+                <li class="active-nav">
+                    <a class="nav-links" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="catalogo.html">Catalogo</a>
+                </li>
+                <li>
+                    <a href="#">Actividades</a>
+                </li>
+                <li>
+                    <a href="#">Novedades</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section  class="col-12">
+        <h2>Catálogo</h2>
+        <img src="imagenes/foto-novedad1.jpg" alt="Foto de Novedades de la editorial Cascaróna Artesanal">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos suscipit aspernatur, cupiditate ullam incidunt totam blanditiis optio natus officia sunt vero ex facilis, quam asperiores id maxime ducimus vel sint!<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ea tempore velit ipsa possimus neque, quos ullam rem consequuntur, at delectus ducimus quasi corporis enim modi! Doloribus enim commodi id.
+        </p>
+    </section>
+    <section>
+        <articulo class="boxes">
+            <div class="box col-12">
+                <div class="box-img col-5">
+                    <img src="imagenes/card-table.jpg" alt="Imagen catálogo Cascarón Artesanal">
+                </div>
+                <div class="tab-box col-7">
+                    <h3>Titulo</h3>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')">Reseña</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Especificaciones</button>
+                    </div>
+
+                    <div id="London" class="tabcontent">
+                        <h3>Titulo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum nisi placeat sequi adipisci. Asperiores obcaecati adipisci laudantium ducimus unde, soluta odio facere doloremque maxime, similique officiis provident architecto placeat possimus.</p>
+                    </div>
+
+                    <div id="Paris" class="tabcontent">
+                        <h3>Detalles técnicos</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci magnam, accusamus voluptatem minus voluptatum recusandae dolor ad! Cupiditate, iste corporis consectetur labore quibusdam eos magnam accusantium fugiat minus beatae nesciunt!</p>
+                    </div>
+                </div>
+            </div>
+        </articulo>
+    </section>
+    <footer>
+        <address class="info col-4">
+            <h3>Contacto</h3>
+            <a href="info@email.com">rocato69@gmail.com</a>
+            <p>Whatsapp: +52 777 162 39 50 </p>
+            <p>Cuernavaca, Morelos</p>
+            <p>México</p>
+        </address>
+        <div class="info footer-logo col-4 xtra">
+            <p>Cascaron Artesanal</p>
+            <p>Editorial</p>
+        </div>
+        <div class="info col-4">
+            <h3>Información</h3>
+            <a href="#">Nosotros</a>
+            <a href="#">Terminos y Condiciones</a>
+            <a href="#">Privacidad</a>
+        </div>
+        <div class="copy col-12">
+            <p>Copyright &copy; <b>Cascaron Artesanal Editorial</b> 2023 | Dev by <i>Téotl WebDesign</i></p>
+        </div>
+    </footer>
+    <!-- JAVA SCRIPT -->
+    <script src="script.js"></script> 
+</body>
+</html>
