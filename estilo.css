@@ -202,7 +202,17 @@ footer .info {
 .copy p {
     font-size: .6em;
 }
-
+/* -- INTRO PAGES -- */
+.intro-page h2{
+    padding: 10px 0px;
+    text-align: center;
+}
+.intro-page img {
+    width: 100%;
+}
+.intro-page p {
+    padding: 15px 0px;
+}
 /* -- TAB BOXS -- */
 .tab {
     overflow: hidden;
@@ -253,6 +263,10 @@ footer .info {
 }
 .box-img img {
     width: 100%;
+}
+.box-bottom h3 {
+    text-align: center;
+    padding: 10px 0px;
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
