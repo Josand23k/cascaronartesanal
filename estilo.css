@@ -241,10 +241,10 @@ footer .info {
     padding: 15px 10px;
     font-size: 1.1em;
     line-height: 1.5;
+    margin-bottom: 25px;
 }
 
 /* -- TAB BOXS -- */
-
 .tab {
     overflow: hidden;
     background-color: var(--background-color);
@@ -276,7 +276,6 @@ footer .info {
   
     /* Style the tab content */
 .tabcontent {
-    display: none;
     padding: 6px 12px;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
@@ -286,24 +285,16 @@ footer .info {
 }
 .tab-box h3 {
     padding: 10px;
-}
-  /* Fade in tabs */
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-  
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    background: linear-gradient(rgb(100, 2, 95, .5), white);
 }
 
 /* -- BOXES -- */
 .box {
-    border-top: 4px solid rgb(229, 3, 218);
+    padding: 10px 0px ;
+    margin-bottom: 25px;
 }
 .box-img img {
-    width:100%;
+    width: 100%;
 }
 
 /* -- BOX BOTTOM -- */
@@ -340,10 +331,31 @@ footer .info {
   
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-[class*="col-"] {
-    width: 100%;
-}
-}
+    .row {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    [class*="col-"] {
+        float: left;
+    }
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    } 
+
+/* -- BOXES PAGES -- */
+
   
 /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
