@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body class="row"> 
+<body> 
     <header class="primary-header  flex">
         <div>
             <img src="imagenes/Logo.jpg" alt="logo" class="logo">
@@ -18,45 +18,34 @@
         <div class="name">
             <h1>Cascarón Artesanal</h1>
         </div>
-
-        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false" type="button"><span class="burger">&#9776;</span></button>
-        <nav>
-            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
-                <li>
-                    <a class="nav-links" href="index.html">Inicio</a>
-                </li>
-                <li  class="active-nav">
-                    <a href="catalogo.html">Catalogo</a>
-                </li>
-                <li>
-                    <a href="actividades.html">Actividades</a>
-                </li>
-                <li>
-                    <a href="novedades.html">Novedades</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-hidden="true">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="topnav flex" id="myTopnav">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html"  class="active">Catálogo</a>
+            <a href="novedades.html">Novedades</a>
+            <a href="actividades.html">Actividades</a>
+            <a href="#about">Contacto</a>
+        </div>
     </header>
-    <section  class="intro-page col-12">
+    <section  class="intro-page">
         <h2>Catálogo</h2>
         <img src="imagenes/foto-novedad1.jpg" alt="Foto de Novedades de la editorial Cascaróna Artesanal">
         <p>
-            Cascarón Artesanal Editorial presenta libros que están disponibles para las lectoras y lectores a través de su servicio de envíos, por paquetería o correo postal, así como en Ferias de Editoriales en las que esté presente esta casa editorial o en las presentaciones de libros de esta editorial artesanal, cartonera y alternativa.<br>
+            <b>Cascarón Artesanal Editorial</b> presenta libros que están disponibles para las lectoras y lectores a través de su servicio de envíos, por paquetería o correo postal, así como en Ferias de Editoriales en las que esté presente esta casa editorial o en las presentaciones de libros de esta editorial artesanal, cartonera y alternativa.<br>
             El amplio Catálogo está dividido en dos grandes grupos, el apartado de los libros clásicos, es decir, los que tienen vida desde hace más tres meses y hasta con más de ocho años de vida, como El mezcal (antes Todos los caminos conducen al mezcal) de Rocato Bablot, en las que el autor recorre el mundo del mezcal durante varias décadas o Herbolaria mexicana, un libro collage entre anécdotas del editor y un catálogo de plantas medicinales.<br>
             El otro grupo de Cascarón Artesanal Editorial es el de publicaciones solamente para niñas y niños, mucho de los cuales ya tienen circulando varios años y que siempre están presentes en las Ferias de Libros en las que concursa esta casa de libros artesanales, como el libro de Animalia, un libro hecho con mucha imaginación y para llevar al mundo animal a las niñas y niños, así como Los amigos gatos, con cuentos inolvidables y entrañables, así como un amplio catálogo de curiosidades de estos felinos maravillosos. 
         </p>
     </section>
     <section>
         <articulo class="boxes">
-            <div class="box col-12">
-                <div class="box-img col-5">
+            <div class="box">
+                <div class="box-img">
                     <img src="imagenes/card-table.jpg" alt="Imagen catálogo Cascarón Artesanal">
                 </div>
 
-                <div class="tab-box col-7">
+                <div class="tab-box">
                     <h3>400 mujeres en la música (8 volúmenes) </h3>
                     <div class="tabcontent">
                         <p>Un recorrido amplio por los ritmos, la historia de la música, los géneros musicales, los premios y reconocimientos o la falta de estos, mujeres que han puesto su granito de arena en el desarrollo de la música.<br>
@@ -164,10 +153,16 @@
     <br>
     <div class="box-bottom col-12">
         <h3>Servicios Editoriales</h3>
-        <p>Lorem ipsum dolor sit amet Cascarón Artesanal Editorial, a través de Ediciones Clandestino, brinda los servicios editoriales para la elaboración de tus libros impresos, cubriendo todos los aspectos del proceso editorial y de impresión: corrección de estilo, formación, diseño, cuidado de la edición e impresión.<br>
+        <p>Cascarón Artesanal Editorial, a través de Ediciones Clandestino, brinda los servicios editoriales para la elaboración de tus libros impresos, cubriendo todos los aspectos del proceso editorial y de impresión: corrección de estilo, formación, diseño, cuidado de la edición e impresión.<br>
         Es decir, todo para tu libro, o tus libros, desde 10 ejemplares en adelante. </p>
     </div>
     <footer>
+        <div class="info footer-logo col-4">
+            <img src="imagenes/Logo.jpg" alt="Logo Editorial Cascaron Artesanal">
+            <p>Cascarón Artesanal</p>
+            <p>Editorial</p>
+        </div>
+
         <address class="info col-4">
             <h3>Contacto</h3>
             <a href="info@email.com">rocato69@gmail.com</a>
@@ -175,10 +170,7 @@
             <p>Cuernavaca, Morelos</p>
             <p>México</p>
         </address>
-        <div class="info footer-logo col-4 xtra">
-            <p>Cascaron Artesanal</p>
-            <p>Editorial</p>
-        </div>
+
         <div class="info col-4">
             <h3>Información</h3>
             <a href="#">Nosotros</a>

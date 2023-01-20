@@ -19,28 +19,18 @@
             <h1>Cascarón Artesanal</h1>
         </div>
 
-        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false" type="button"><span class="burger">&#9776;</span></button>
-        <nav>
-            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
-                <li>
-                    <a class="nav-links" href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catalogo</a>
-                </li>
-                <li>
-                    <a href="actividades.html">Actividades</a>
-                </li>
-                <li class="active-nav">
-                    <a href="novedades.html">Novedades</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-hidden="true">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="topnav flex" id="myTopnav">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="novedades.html"  class="active">Novedades</a>
+            <a href="actividades.html">Actividades</a>
+            <a href="#about">Contacto</a>
+        </div>
     </header>
-    <section  class="intro-page col-12">
+    <section  class="intro-page">
         <h2>Novedades</h2>
         <img src="imagenes/foto-novedad1.jpg" alt="Foto de Novedades de la editorial Cascaróna Artesanal">
         <p>
@@ -51,12 +41,12 @@
     
     <section>
         <articulo class="boxes">
-            <div class="box col-12">
-                <div class="box-img col-5">
+            <div class="box">
+                <div class="box-img">
                     <img src="imagenes/card-table.jpg" alt="Imagen catálogo Cascarón Artesanal">
                 </div>
 
-                <div class="tab-box col-7">
+                <div class="tab-box">
                     <h3>2023 Mujeres mexicanas en las artes</h3>
                     <div class="tabcontent">
                         <p>53 mujeres artistas tienen cabida en este libro, que además de libro es una agenda-calendario.<br>
@@ -72,12 +62,12 @@
 
         <br>
         <articulo class="boxes">
-            <div class="box col-12">
-                <div class="box-img col-5">
+            <div class="box">
+                <div class="box-img">
                     <img src="imagenes/card-table.jpg" alt="Imagen catálogo Cascarón Artesanal">
                 </div>
 
-                <div class="tab-box col-7">
+                <div class="tab-box">
                     <h3>Manifiestos que cambiaron el mundo o eso pretendían</h3>
                     <div class="tabcontent">
                         <p>Los artistas han cumplido el cometido de mostrar sus ideas del arte, haciéndolo de una manera original para difundir sus concepciones y sus cosmovisiones  así surgieron manifiestos como el dadaísta, el surrealista, cubista en Europa, entre otros, o el Manifiesto de manifiestos en América del Sur, o el de los estridentistas en México.<br>
@@ -90,12 +80,12 @@
 
         <br>
         <articulo class="boxes">
-            <div class="box col-12">
-                <div class="box-img col-5">
+            <div class="box">
+                <div class="box-img">
                     <img src="imagenes/card-table.jpg" alt="Imagen catálogo Cascarón Artesanal">
                 </div>
 
-                <div class="tab-box col-7">
+                <div class="tab-box">
                     <h3>Documentales para entender a América Latina</h3>
                     <div class="tabcontent">
                         <p>La realidad ha cambiado vertiginosamente en estos primeros años del siglo 21.<br>
@@ -110,12 +100,12 @@
 
         <br>
         <articulo class="boxes">
-            <div class="box col-12">
-                <div class="box-img col-5">
+            <div class="box">
+                <div class="box-img">
                     <img src="imagenes/card-table.jpg" alt="Imagen catálogo Cascarón Artesanal">
                 </div>
 
-                <div class="tab-box col-7">
+                <div class="tab-box">
                     <h3>Cine de luchadores</h3>
                     <div class="tabcontent">
                         <p>Cascarón Artesanal Editorial se sube al encordado y entra a la sala de cine, para llevar a lectoras y lectores Cine de luchadores, o Cine endémico mexicano: de luchadores, en el cual se presenta todo el cine que destacó de este casi efímero género cinematográfico.<br> 
@@ -131,12 +121,12 @@
 
         <br>
         <articulo class="boxes">
-            <div class="box col-12">
-                <div class="box-img col-5">
+            <div class="box">
+                <div class="box-img">
                     <img src="imagenes/card-table.jpg" alt="Imagen catálogo Cascarón Artesanal">
                 </div>
 
-                <div class="tab-box col-7">
+                <div class="tab-box">
                     <h3>Los muertos están vivos</h3>
                     <div class="tabcontent">
                         <p>Una labor que se ha propuesto esta empresa alternativa, cartonera y artesanal es el del rescate cultural por lo que ha puesto a la disposición de lectoras y lectores, el rescate de un acontecimiento que es más que una fiesta, que además es Patrimonio Intangible de la Humanidad, como lo estableció la Unesco.<br> 
@@ -151,12 +141,12 @@
 
         <br>
         <articulo class="boxes">
-            <div class="box col-12">
-                <div class="box-img col-5">
+            <div class="box">
+                <div class="box-img">
                     <img src="imagenes/card-table.jpg" alt="Imagen catálogo Cascarón Artesanal">
                 </div>
 
-                <div class="tab-box col-7">
+                <div class="tab-box">
                     <h3>La ciencia de los besos</h3>
                     <div class="tabcontent">
                         <p>La ciencia de los besos es un libro collage donde aparecen los besos más famosos del mundo en la fotografía y en el cine, poesía especial para los ósculos, narrativas diversas que cuentan con todo lo relativo a esta práctica amorosa tan grata y tan censurada a través de los años.<br>
@@ -168,31 +158,31 @@
         </articulo>
     </section>
     <br>
-    <div class="box-bottom col-12">
+    <div class="box-bottom">
         <h3>Servicios Editoriales</h3>
         <p>Cascarón Artesanal Editorial, a través de Ediciones Clandestino, brinda los servicios editoriales para la elaboración de tus libros impresos, cubriendo todos los aspectos del proceso editorial y de impresión: corrección de estilo, formación, diseño, cuidado de la 
         edición e impresión.<br>
         Es decir, todo para tu libro, o tus libros, desde 10 ejemplares en adelante.</p>
     </div>
     <footer>
-        <address class="info col-4">
+        <address class="info">
             <h3>Contacto</h3>
             <a href="info@email.com">rocato69@gmail.com</a>
             <p>Whatsapp: +52 777 162 39 50 </p>
             <p>Cuernavaca, Morelos</p>
             <p>México</p>
         </address>
-        <div class="info footer-logo col-4 xtra">
+        <div class="info footer-logo xtra">
             <p>Cascaron Artesanal</p>
             <p>Editorial</p>
         </div>
-        <div class="info col-4">
+        <div class="info">
             <h3>Información</h3>
             <a href="#">Nosotros</a>
             <a href="#">Terminos y Condiciones</a>
             <a href="#">Privacidad</a>
         </div>
-        <div class="copy col-12">
+        <div class="copy">
             <p>Copyright &copy; <b>Cascaron Artesanal Editorial</b> 2023 | Dev by <i>Téotl WebDesign</i></p>
         </div>
     </footer>

@@ -19,26 +19,16 @@
             <h1>Cascarón Artesanal</h1>
         </div>
 
-        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false" type="button"><span class="burger">&#9776;</span></button>
-        <nav>
-            <ul id="primary-nav" data-visible="false" class="primary-nav flex">
-                <li class="active-nav">
-                    <a class="nav-links" href="#">Inicio</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catalogo</a>
-                </li>
-                <li>
-                    <a href="actividades.html">Actividades</a>
-                </li>
-                <li>
-                    <a href="novedades.html">Novedades</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-hidden="true">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="topnav flex" id="myTopnav">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="novedades.html">Novedades</a>
+            <a href="actividades.html">Actividades</a>
+            <a href="#about">Contacto</a>
+        </div>
     </header>
 <!-- SLIDE -->
 <div class="slideshow-container">
@@ -67,8 +57,7 @@
     <span class="dot" onclick="currentSlide(3)">3</span> 
 </div>
 <!-- CONTENIDO -->
-<div class="content row">
-    <div class="col-9">
+<div class="content">
         <section class="intro">
             <h2>Cascarón Artesanal Editorial</h2>
             <p>Cascarón Artesanal Editorial es una editorial con un doble propósito, es por un lado un proyecto alternativo de libros cartoneros y artesanales y una empresa de servicios editoriales.<br>
@@ -81,98 +70,102 @@
                 <a href="novedades.html">Novedades</a>
             </div>
             <hr class="hr-index">
-            <div class="card-nov col-4">
-                <h3>2023 Mujeres mexicanas en las artes</h3>
-                <picture>
-                    <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 600px)">
-                    <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
-                    <source srcset="imagenes/cardsover600px.jpg">
-                    <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
-                </picture>
-                <p>Una pequeña semblanza nos acercara a estas 53 mujeres. Las épocas, los estilos y la 
-                diversidad están presentes. Son 53 mujeres que, o fueron pioneras en una de las artes o 
-                están siendo parte de la oferta artística mexicana en el país y en el mundo. Se rescatan 
-                algunas de las mujeres baluartes en el arte que han sido olvidadas o ninguneadas, pero 
-                también se presentan las nuevas generaciones de mujeres creativas.</p>
-            </div>
-            <div class="card-nov col-4">
-                <h3>Manifiestos que cambiaron el mundo o eso pretendían</h3>
-                <picture>
-                    <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
-                    <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
-                    <source srcset="imagenes/cardsover600px.jpg">
-                    <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
-                </picture>
-                <p>Los artistas han cumplido el cometido de mostrar sus ideas del arte, haciéndolo de una 
-                manera original para difundir sus concepciones y sus cosmovisiones, así surgieron 
-                manifiestos como el dadaísta, el surrealista, cubista en Europa, entre otros, o el 
-                Manifiesto de manifiestos en América del Sur, o el de los estridentistas en México. Al 
-                final se incorpora el manifiesto más famoso en el ámbito político de todos los tiempos, 
-                el Manifiesto del Partido Comunista.</p>
-            </div>
-            <div class="card-nov col-4 xtra">
-                <h3>Titulo</h3>
-                <picture>
-                    <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
-                    <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
-                    <source srcset="imagenes/cardsover600px.jpg">
-                    <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
-                </picture>
-                <p>Aquí va una pequeña descripción de lo que se quiera publicar ene ste espacio.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugiat molestias enim nihil pariatur. Quibusdam, iusto omnis non autem vero voluptas illo deleniti ea sit sequi exercitationem possimus ullam ipsum.</p>
-            </div>
+            <div class="card-index-box">  
+                <div class="card-nov">
+                    <h3>2023 Mujeres mexicanas en las artes</h3>
+                    <picture>
+                        <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 600px)">
+                        <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
+                        <source srcset="imagenes/cardsover600px.jpg">
+                        <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
+                    </picture>
+                    <p>Una pequeña semblanza nos acercara a estas 53 mujeres. Las épocas, los estilos y la 
+                    diversidad están presentes. Son 53 mujeres que, o fueron pioneras en una de las artes o 
+                    están siendo parte de la oferta artística mexicana en el país y en el mundo. Se rescatan 
+                    algunas de las mujeres baluartes en el arte que han sido olvidadas o ninguneadas, pero 
+                    también se presentan las nuevas generaciones de mujeres creativas.</p>
+                </div>
+              
+                <div class="card-nov">
+                    <h3>Manifiestos que cambiaron el mundo o eso pretendían</h3>
+                    <picture>
+                        <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
+                        <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
+                        <source srcset="imagenes/cardsover600px.jpg">
+                        <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
+                    </picture>
+                    <p>Los artistas han cumplido el cometido de mostrar sus ideas del arte, haciéndolo de una 
+                    manera original para difundir sus concepciones y sus cosmovisiones, así surgieron 
+                    manifiestos como el dadaísta, el surrealista, cubista en Europa, entre otros, o el 
+                    Manifiesto de manifiestos en América del Sur, o el de los estridentistas en México. Al 
+                    final se incorpora el manifiesto más famoso en el ámbito político de todos los tiempos, 
+                    el Manifiesto del Partido Comunista.</p>
+                </div>
+
+                <div class="card-nov xtra">
+                    <h3>Titulo</h3>
+                    <picture>
+                        <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
+                        <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
+                        <source srcset="imagenes/cardsover600px.jpg">
+                        <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
+                    </picture>
+                    <p>Aquí va una pequeña descripción de lo que se quiera publicar ene ste espacio.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugiat molestias enim nihil pariatur. Quibusdam, iusto omnis non autem vero voluptas illo deleniti ea sit sequi exercitationem possimus ullam ipsum.</p>
+                </div>
+            </div>    
         </section>
         <section class="novedades">
             <div class="title">
                 <a href="catalogo.html">Catálogo</a>
             </div>
             <hr class="hr-index">
-            <div class="card-nov col-4">
-                <h3>400 mujeres en la música (8 volúmenes)</h3>
-                <picture>
-                    <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
-                    <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
-                    <source srcset="imagenes/cardsover600px.jpg">
-                    <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
-                </picture>
-                <p>Un recorrido amplio por los ritmos, la historia de la música, los géneros musicales, los premios y reconocimientos o la falta de estos, mujeres que han puesto su granito de 
-                arena en el desarrollo de la música.
-                </p>
-            </div>
-            <div class="card-nov col-4">
-                <h3>El mezcal</h3>
-                <picture>
-                    <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
-                    <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
-                    <source srcset="imagenes/cardsover600px.jpg">
-                    <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
-                </picture>
-                <p>Este libro, El mezcal o Todos los caminos conducen al mezcal, de Rocato Bablot, acerca 
-                a las lectoras y lectores al mundo del mezcal, pero qué quiere decir esto. Este híbrido, 
-                algo de novela, investigación y periodismo, nos lleva a conocer todo lo relativo a esta 
-                bebida tan popular en México.
-                </p>
-            </div>
-            <div class="card-nov col-4 xtra">
-                <h3>Titulo</h3>
-                <picture>
-                    <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
-                    <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
-                    <source srcset="imagenes/cardsover600px.jpg">
-                    <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
-                </picture>
-                <p>Aquí va una pequeña descripción de lo que se quiera publicar ene ste espacio.<br>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sequi omnis nobis optio, eius cum sed dolorum adipisci nisi tempora temporibus officia ullam cumque? Non ipsam quaerat ut ipsum modi!</p>
+            <div class="card-index-box"> 
+                <div class="card-nov">
+                    <h3>400 mujeres en la música (8 volúmenes)</h3>
+                    <picture>
+                        <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
+                        <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
+                        <source srcset="imagenes/cardsover600px.jpg">
+                        <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
+                    </picture>
+                    <p>Un recorrido amplio por los ritmos, la historia de la música, los géneros musicales, los premios y reconocimientos o la falta de estos, mujeres que han puesto su granito de 
+                    arena en el desarrollo de la música.
+                    </p>
+                </div>
+                <div class="card-nov">
+                    <h3>El mezcal</h3>
+                    <picture>
+                        <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
+                        <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
+                        <source srcset="imagenes/cardsover600px.jpg">
+                        <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
+                    </picture>
+                    <p>Este libro, El mezcal o Todos los caminos conducen al mezcal, de Rocato Bablot, acerca 
+                    a las lectoras y lectores al mundo del mezcal, pero qué quiere decir esto. Este híbrido, 
+                    algo de novela, investigación y periodismo, nos lleva a conocer todo lo relativo a esta 
+                    bebida tan popular en México.
+                    </p>
+                </div>
+                <div class="card-nov xtra">
+                    <h3>Titulo</h3>
+                    <picture>
+                        <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
+                        <source srcset="imagenes/card-table.jpg" media="(max-width: 992px)">
+                        <source srcset="imagenes/cardsover600px.jpg">
+                        <img src="imagenes/cardsover600px.jpg" alt="Flowers" class="cards-img">
+                    </picture>
+                    <p>Aquí va una pequeña descripción de lo que se quiera publicar ene ste espacio.<br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sequi omnis nobis optio, eius cum sed dolorum adipisci nisi tempora temporibus officia ullam cumque? Non ipsam quaerat ut ipsum modi!</p>
+                </div>
             </div>
         </section>
-    </div>
-    <div class="col-3">
-        <section class="novedades">
+        <section class="actividades">
             <div class="title">
                 <a href="actividades.html">Actividades</a>
             </div>
             <hr class="hr-index">
-            <div class="card-nov">
+            <div class="card-act">
                 <h3>Titulo</h3>
                 <picture>
                     <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
@@ -183,7 +176,7 @@
                 <p>Aquí va una pequeña descripción de lo que se quiera publicar ene ste espacio.</p>
                 <P class="xtra-l">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae excepturi natus deserunt veritatis dolor nesciunt quod, facere velit nulla asperiores architecto rerum reprehenderit esse quidem. Deserunt possimus qui explicabo cupiditate?</p>
             </div>
-            <div class="card-nov">
+            <div class="card-act">
                 <h3>Titulo</h3>
                 <picture>
                     <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
@@ -194,7 +187,7 @@
                 <p>Aquí va una pequeña descripción de lo que se quiera publicar ene ste espacio.</p>
                 <p class="xtra-l">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veniam illo consequatur ipsam voluptatem quo error dolores alias dolorum ea at debitis iste cumque quia quaerat, adipisci pariatur exercitationem. Aliquam!</p>
             </div>
-            <div class="card-nov xtra">
+            <div class="card-act xtra">
                 <h3>Titulo</h3>
                 <picture>
                     <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
@@ -205,7 +198,7 @@
                 <p>Aquí va una pequeña descripción de lo que se quiera publicar ene ste espacio.</p>
                 <p class="xtra-l">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat rerum, maiores tempore repellendus ipsa in quo corporis quidem eaque veniam natus. Modi quia veritatis ipsum laudantium fuga? Beatae, dolorem repellat.</p>
             </div>
-            <div class="card-nov xtra">
+            <div class="card-act xtra">
                 <h3>Titulo</h3>
                 <picture>
                     <source srcset="imagenes/foto-novedad1.jpg" media="(max-width: 400px)">
@@ -217,29 +210,31 @@
                 <p class="xtra-l">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor officiis accusamus cum harum, tenetur voluptate corporis obcaecati laboriosam mollitia eaque aspernatur excepturi commodi sint veniam amet deserunt nesciunt perferendis ducimus.</p>
             </div>
         </section>
-    </div>
 </div>
 <br>
 <footer>
-    <address class="info col-4">
+    <div class="info footer-logo">
+        <img src="imagenes/Logo.jpg" alt="Logo Editorial Cascaron Artesanal">
+        <p>Cascarón Artesanal</p>
+        <p>Editorial</p>
+    </div>
+
+    <address class="info">
         <h3>Contacto</h3>
         <a href="info@email.com">rocato69@gmail.com</a>
         <p>Whatsapp: +52 777 162 39 50 </p>
         <p>Cuernavaca, Morelos</p>
         <p>México</p>
     </address>
-    <div class="info footer-logo col-4 xtra">
-        <p>Cascaron Artesanal</p>
-        <p>Editorial</p>
-    </div>
+    
     <div class="info col-4">
         <h3>Información</h3>
         <a href="#">Nosotros</a>
         <a href="#">Terminos y Condiciones</a>
         <a href="#">Privacidad</a>
     </div>
-    <div class="copy col-12">
-        <p>Copyright &copy; <b>Cascaron Artesanal Editorial</b> 2023 | Dev by <i>Téotl WebDesign</i></p>
+    <div class="copy">
+        <p>Copyright &copy; <b>Cascarón Artesanal Editorial</b> 2023 | Dev by <i>Téotl WebDesign</i></p>
     </div>
 </footer>
 <!-- JAVA SCRIPT -->
