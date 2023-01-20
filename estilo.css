@@ -423,12 +423,10 @@ footer {
     max-width: 700px;
 }
 
-footer {
-    
+.foot {
+    display: flex;
 }
-
 .info {
-    float: left;
     width: 33.33%;
 }
 
